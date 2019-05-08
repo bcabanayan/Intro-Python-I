@@ -19,11 +19,35 @@
 
 # Without changing the following line, how can you make it print into something
 # more human-readable? Hint: Look up the `object.__str__` method
-print(waypoint)
+# print(waypoint)
 
 # Make a new geocache "Newberry Views", diff 1.5, size 2, 44.052137, -121.41556
 
 # YOUR CODE HERE
 
 # Print it--also make this print more nicely
-print(geocache)
+# print(geocache)
+
+class Animal:
+    # define attributes, assign initial values
+    def __init__(self, name, sound, species, num_legs):
+    # self: with this specific instance, set this value to this parameter
+        self.name = name
+        self.sound = sound
+        self.species = species
+        self.num_legs = num_legs
+
+    # define class methods
+    def set_num_legs(self, num):
+        self.num_legs = num
+
+    def make_sound(self, sound):
+        print(sound)
+
+# instance of class
+animal_a = Animal('ernie', 'elephant', 'pbbbbbbbbbt', 4)
+
+# animal_a.make_sound(animal_a, 'pbbbbbt')
+print(animal_a.num_legs)
+animal_a.num_legs(3)
+print(animal_a.num_legs)
