@@ -50,3 +50,13 @@ double_list(my_list)
 # double_list(my_list[:])
 
 print(my_list)
+
+def capitalize_name(name): # first last
+    full_name = name.split(" ")
+    name = full_name[0][0:1].upper() + full_name[0][1:] + " " + full_name[1][0:1].upper() + full_name[1][1:]
+    print(name)
+    # name = name[0:1].upper() + ??? + name[].upper() + name[?:]
+
+my_name = "bruce cabanayan"
+capitalize_name(my_name)
+print(my_name)
