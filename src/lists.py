@@ -32,10 +32,10 @@ print(len(x))
 # YOUR CODE HERE
 # javascript: for (i = 0; i < arr.length; i++ ) { etc }
 # python:
+# don't forget the colon!
 for i in range(0 , len(x)):
     print(x[i]*1000)
 # more like a python for each
 for number in x:
     print(number*1000)
-    
-print(x)
+

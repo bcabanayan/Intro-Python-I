@@ -40,3 +40,10 @@ y = []
 
 print(y)
 
+# all cubes of 0 - 20 that are also divisible by 3
+
+y = [i ** 3 for i in range(21) if i ** 3 % 3 == 0]
+print(y)
+
+# don't forget square brackets
+# any list comprehension can be written as a for loop
