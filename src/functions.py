@@ -14,7 +14,10 @@ print(is_even(num))
 
 # Print out "Even!" if the number is even. Otherwise print "Odd"
 
-# YOUR CODE HERE
+if is_even(num) == True:
+    print('Even!')
+else:
+    print('Odd')
 
 # Write a function that doubles the value of an integer
 
