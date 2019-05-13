@@ -6,12 +6,21 @@
 
 # YOUR CODE HERE
 
+def f1(n1, n2):
+    return n1 + n2    
+
 print(f1(1, 2))
 
 # Write a function f2 that takes any number of integer arguments and prints the
 # sum. Google for "python arbitrary arguments" and look for "*args"
 
 # YOUR CODE HERE
+
+def f2(*nums):
+    sum = 0
+    for num in nums:
+        sum = sum + num
+    return sum
 
 print(f2(1))                    # Should print 1
 print(f2(1, 3))                 # Should print 4
@@ -21,13 +30,23 @@ print(f2(7, 9, 1, 3, 4, 9, 0))  # Should print 33
 a = [7, 6, 5, 4]
 
 # What thing do you have to add to make this work?
-print(f2(a))    # Should print 22
+
+def f2a(nums):
+    sum = 0
+    for i in range(0, len(nums)): #have to add the "range" of 0 to the length of the numbers list 
+        sum = sum + nums[i] #have to add the reference to the item at index of i for the list
+    return sum
+
+print(f2a(a))    # Should print 22
 
 # Write a function f3 that accepts either one or two arguments. If one argument,
 # it returns that value plus 1. If two arguments, it returns the sum of the
 # arguments. Google "python default arguments" for a hint.
 
 # YOUR CODE HERE
+
+def f3(num1, num2=1):
+    return num1 + num2
 
 print(f3(1, 2))  # Should print 3
 print(f3(8))     # Should print 9
@@ -43,10 +62,14 @@ print(f3(8))     # Should print 9
 
 # YOUR CODE HERE
 
+def f4(*args):
+    for arg in args:
+        print(str(arg))
+
 # Should print
 # key: a, value: 12
 # key: b, value: 30
-f4(a=12, b=30)
+print(f4(a=12, b=30))
 
 # Should print
 # key: city, value: Berkeley
