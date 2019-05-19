@@ -24,7 +24,7 @@ from datetime import datetime
 # print(len(sys.argv))  print number of command line args
 # print(sys.argv[0])  print actual value of command line arg
 
-if len(sys.argv) == 1:
+if len(sys.argv) == 1 and sys.argv[0] == 'cal.py':
   m = datetime.now().month
   y = datetime.now().year
 
@@ -51,7 +51,7 @@ elif len(sys.argv) == 3:
 
 else:
     format_err = print("No arguments provided")
-    format_err
+    print(format_err)
     exit()
 
 #  - Otherwise, print a usage statement to the terminal indicating
