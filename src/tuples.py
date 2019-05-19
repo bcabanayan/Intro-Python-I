@@ -43,6 +43,6 @@ t = (1, 2, 5, 7, 99)
 print_tuple(t)  # Prints 1 2 5 7 99, one per line
 
 # Declare a tuple of 1 element then print it
-u = (1)  # What needs to be added to make this work?
+u = (1,)  # What needs to be added to make this work?
 # Brackets need to be added in order to convert the element into an iterable list.
-print_tuple([u])
+print_tuple(u)
